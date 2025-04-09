@@ -1,29 +1,34 @@
 local Library = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-local Window = Fluent:CreateWindow({
-    Title = "The Library" .. Fluent.Version,
+local Window = Library:CreateWindow({
+    Title = "The Library " .. Library.Version,
     SubTitle = "by Godlike",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Dark",
-    MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
+    MinimizeKey = Enum.KeyCode.LeftControl -- Used when there's no MinimizeKeybind
 })
+
 -- Fluent provides Lucide Icons, they are optional
 local Tabs = {
-    THE LIBRARY = Window:AddTab({ Title = "THE LIBRARY", Icon = "0" }),
+    ["THE LIBRARY"] = Window:AddTab({ Title = "THE LIBRARY", Icon = "0" }),
 }
-Tab.THE LIBRARY:AddButton({
+
+-- Correctly access the tab from the Tabs table
+local libraryTab = Tabs["THE LIBRARY"]
+
+libraryTab:AddButton({
     Title = "MoonHub Elerium",
     Description = "Opens MoonHub",
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MoonLightYT/MoonHub-Elerium/refs/heads/main/GOD-PROTECTION100%25SECURE100%25SECURE.txt"))()   
-    end
-})
-Tab.THE LIBRARY:AddButton({
-    Title = "TGX script",
-    Description = "Opens TGX Script",
-    Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/MoonLightYT/TGX-PUBLIC/refs/heads/main/-----100%25GOD-PROTECT100%25-----.txt"))()  
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MoonLightYT/MoonHub-Elerium/refs/heads/main/GOD-PROTECTION100%25SECURE100%25SECURE.txt"))()   
     end
 })
 
+libraryTab:AddButton({
+    Title = "TGX Script",
+    Description = "Opens TGX Script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MoonLightYT/TGX-PUBLIC/refs/heads/main/-----100%25GOD-PROTECT100%25-----.txt"))()  
+    end
+})
