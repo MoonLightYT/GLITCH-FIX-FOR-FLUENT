@@ -10,19 +10,6 @@ local Window = Fluent:CreateWindow({
 })
 -- Fluent provides Lucide Icons, they are optional
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "" }),
+    Main = Window:AddTab({ Title = "Main", Icon = "0" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
-local Toggle = Tab:AddToggle("MyToggle", 
-{
-    Title = "Toggle", 
-    Description = "Toggle description",
-    Default = false
-    Callback = function(state)
-	if state then
-	    print("Toggle On")
-	else
-	    print("Toggle Off")
-        end
-    end 
-})
