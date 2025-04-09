@@ -10,6 +10,20 @@ local Window = Fluent:CreateWindow({
 })
 -- Fluent provides Lucide Icons, they are optional
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "0" }),
-    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+    THE LIBRARY = Window:AddTab({ Title = "THE LIBRARY", Icon = "0" }),
 }
+Tab.THE LIBRARY:AddButton({
+    Title = "MoonHub Elerium",
+    Description = "Opens MoonHub",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MoonLightYT/MoonHub-Elerium/refs/heads/main/GOD-PROTECTION100%25SECURE100%25SECURE.txt"))()   
+    end
+})
+Tab.THE LIBRARY:AddButton({
+    Title = "TGX script",
+    Description = "Opens TGX Script",
+    Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/MoonLightYT/TGX-PUBLIC/refs/heads/main/-----100%25GOD-PROTECT100%25-----.txt"))()  
+    end
+})
+
