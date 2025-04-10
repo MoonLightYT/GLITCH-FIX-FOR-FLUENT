@@ -72,3 +72,10 @@ libraryTab:AddButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/iblameaabis/Enchanted/refs/heads/main/Enchanted%20Hub%20On%20Top"))()
     end
 })
+
+local Tabs = {
+    ["KeySystems"] = Window:AddTab({ Title = "KeySystems", Icon = "0" }),
+}
+local Section = Tab.["KeySystems"]:AddSection("Beamed V2 script = benishot")
+local Section = Tab.["KeySystems"]:AddSection("Enchanted Hub Key = aabisisgay")
+local Section = Tab.["KeySystems"]:AddSection("May potentially add a key system to MoonHub but tbh its up to u guys")
