@@ -32,3 +32,43 @@ libraryTab:AddButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/MoonLightYT/TGX-PUBLIC/refs/heads/main/-----100%25GOD-PROTECT100%25-----.txt"))()  
     end
 })
+
+libraryTab:AddButton({
+    Title = "NW HUB",
+    Description = "Opens NW Script",
+    Callback = function()
+         loadstring(game:HttpGet('https://raw.githubusercontent.com/Ceedif/Nw_Hub/refs/heads/main/Nw_Script'))() 
+    end
+})
+
+libraryTab:AddButton({
+    Title = "Beamed v2",
+    Description = "Opens Beamed V2",
+    Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/ben1x1x1x1x/V2/refs/heads/main/BeamedV2FreeLoader"))()
+   end
+})
+
+libraryTab:AddButton({
+    Title = "Lunari",
+    Description = "It opens Lunari",
+    Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/TryharderKid/Test/refs/heads/main/Protected_3990809938452538.txt"))()
+    end
+})
+
+libraryTab:AddButton({
+    Title = "AX HUB",
+    Description = "This opens AX HUB",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/W4ttziez/Muscle-Legends/main/AX%20HUB.lua"))()
+    end
+})
+
+libraryTab:AddButton({
+    Title = "Enchanted Hub",
+    Description = "This opens Enchanted Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/iblameaabis/Enchanted/refs/heads/main/Enchanted%20Hub%20On%20Top"))()
+    end
+})
